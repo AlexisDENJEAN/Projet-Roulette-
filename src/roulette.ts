@@ -8,7 +8,7 @@ export interface SpinResult {
     isHigh: boolean; // 19-36
     isLow: boolean;  // 1-18
 }
-class Roulette {
+export class Roulette {
     private numbers: number[] = Array.from({ length: 37 }, (_, i) => i); // 0 to 36
 
     private rednumbers: number[] = [

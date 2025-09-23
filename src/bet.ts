@@ -10,6 +10,7 @@ export interface Bet {
     }
 class BetValidator {
         static validate(bet: Bet): boolean {
+   
             if (bet.type === "number") {
                 return bet.amount >= 1 && bet.amount <= 10;
             }
